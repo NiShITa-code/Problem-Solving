@@ -1,0 +1,8 @@
+def replace_vow(s, word ):
+  for k,v in word.items():
+    s = s.replace(k,v)
+  return s
+dictionary = {"a":"0", "e":"1", "o":"2", "u":"3"}
+s= input('enter a word: ')
+s = s[::-1]
+print(replace_vow (s,dictionary) + "aca")
